@@ -95,7 +95,7 @@ make mockstack/clean
 | <a name="input_bucket_name"></a> [bucket\_name](#input\_bucket\_name) | Name of the S3 bucket where file artifacts are to be stored | `string` | n/a | yes |
 | <a name="input_create_hashes"></a> [create\_hashes](#input\_create\_hashes) | Create and host sha512 hashes of each file in the `uri_map` | `bool` | `true` | no |
 | <a name="input_prefix"></a> [prefix](#input\_prefix) | S3 key prefix to prepend to each object | `string` | `""` | no |
-| <a name="input_python_cmd"></a> [python\_cmd](#input\_python\_cmd) | Command to use with the filecache module when executing python external resources | `list(any)` | <pre>[<br>  "python"<br>]</pre> | no |
+| <a name="input_python_cmd"></a> [python\_cmd](#input\_python\_cmd) | Command to use with the filecache module when executing python external resources | `list(any)` | <pre>[<br/>  "python"<br/>]</pre> | no |
 | <a name="input_s3_endpoint_url"></a> [s3\_endpoint\_url](#input\_s3\_endpoint\_url) | S3 API endpoint for non-AWS hosts; format: https://hostname:port | `string` | `null` | no |
 | <a name="input_uri_map"></a> [uri\_map](#input\_uri\_map) | Map of URIs to retrieve and the S3 key path at which to store the file | `map(string)` | `{}` | no |
 
