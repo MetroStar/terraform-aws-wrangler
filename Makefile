@@ -8,4 +8,4 @@ MOCKSTACK_LOCAL = $(or $(MOCKSTACK_HOST),localhost)
 terraform/pytest: export TF_VAR_s3_endpoint_url = http://$(MOCKSTACK_LOCAL):4566
 endif
 
-include $(shell test -f .tardigrade-ci || curl -sSL -o .tardigrade-ci "https://raw.githubusercontent.com/plus3it/tardigrade-ci/master/bootstrap/Makefile.bootstrap"; echo .tardigrade-ci)
+include $(shell test -f .tardigrade-ci || curl -sSL -o .tardigrade-ci "https://raw.githubusercontent.com/MetroStar/tardigrade-ci/master/bootstrap/Makefile.bootstrap"; echo .tardigrade-ci)

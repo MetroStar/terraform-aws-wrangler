@@ -3,7 +3,7 @@
 # terraform-aws-wrangler
 
 Terraform module to collect files from various sources and manage them in an S3
-bucket. In order to support arbitrary file-types, this module uses [`terraform-external-file-cache`](https://registry.terraform.io/modules/plus3it/file-cache/external)
+bucket. In order to support arbitrary file-types, this module uses [`terraform-external-file-cache`](https://registry.terraform.io/modules/MetroStar/file-cache/external)
 to create a local cache of the files. The files are then managed in the S3
 bucket using the terraform resource `aws_s3_object`. A sha512 hash of
 every file is also published to the bucket.
